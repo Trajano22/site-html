@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/719d8b262a.js" crossorigin="anonymous"></script>
+    <title>Site de jogos html e css</title>
+</head>
+<body>
+<nav>
+
+        <div class="logo">
+        <a href="index.html"> VIRTUAL GAMES </a> 
+        <div class="fa-brands fa-playstation fa-xl" style="color: #ffffff;" >
+        <i class="fa-brands fa-xbox fa-sm" style="color: #ffffff;"></i>
+        <i class="fa-sharp fa-solid fa-desktop fa-sm" style="color: #ffffff;"></i>
+        <i class="fa-sharp fa-solid fa-gamepad fa-sm" style="color: #ffffff;"></i>
+                
+    </div>
+    </div>
+
+        <ul class="menu_desk">
+        <li> <a href="#"> Inicio </a> </li>
+        <li> <a href="#"> Jogos </a> </li>
+        <li> <a href="#"> Preços </a> </li>
+        <li> <a href="#"> Serviços </a> </li>
+        <li> <a href="#"> Contato </a> </li>
+
+    </ul>
+
+        <ul class="menu_mobi">
+        <div class="icon_x">
+        <i class="fa fa-times" aria-hidden="true"></i>
+
+    </div>
+
+        <li> <a href="#"> Inicio </a> </li>
+        <li> <a href="#"> Jogos </a> </li>
+        <li> <a href="#"> Preços </a> </li>
+        <li> <a href="#"> Serviços </a> </li>
+        <li> <a href="#"> Contato </a> </li>
+
+    </ul>
+    
+    <div class="menu_icon">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+
+    </div>
+    </nav>
+
+        <section class="banner">
+        <div class="texto">
+        <h1 class="titulo">Os melhores jogos pelo melhor preço</h1>
+        <h2 class="sub_titulo">Ps, XBOX, NINTENDO e Pc </h2> 
+        <div class="botoes">
+               <button class="n-overlay">Saiba Mais</button> 
+               <button class="overlay">Inscrever</button>
+    </div>
+    </div>
+    </section>
+    <script>
+        var menuIcon = document.querySelector('.menu_icon');
+        var menuMobi = document.querySelector('.menu_mobi');
+        var iconX = document.querySelector('.menu_mobi .icon_x');
+        menuIcon.addEventListener('click',function(){
+            menuMobi.classList.add('ativo');
+        });
+        iconX.addEventListener('click',function(){
+            menuMobi.classList.remove('ativo');
+        });
+    </script>
+</body>
+</html>
